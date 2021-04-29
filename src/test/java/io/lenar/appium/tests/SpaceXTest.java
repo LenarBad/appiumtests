@@ -22,7 +22,7 @@ public class SpaceXTest extends BaseTest {
                 .getSearchResultsText();
 
         assertTrue(!results.isEmpty(), "No search results found");
-        assertEquals(results.get(0), "American private aerospace company");
+        assertEquals(results.get(0), "American private aerospace company", "First element in search results: ");
 
     }
 

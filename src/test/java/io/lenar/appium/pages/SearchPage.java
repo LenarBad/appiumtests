@@ -26,7 +26,7 @@ public class SearchPage extends Page {
     }
 
     private List<MobileElement> searchResults() {
-        return getDriver().findElements(SEARCH_RESULTS_BY);
+        return findElementsWithWait(SEARCH_RESULTS_BY);
     }
 
     public SearchPage type(String text) {
